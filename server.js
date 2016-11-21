@@ -7,6 +7,10 @@ app.get("/", function(req,res) {
 	res.sendFile(__dirname + "/index.html")
 });
 
+app.get("/newpage", function(req,res) {
+	res.sendFile(__dirname + "/newpage.html")
+});
+
 var port=process.env.PORT;
 
 app.listen(port||8080);
